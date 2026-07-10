@@ -1,18 +1,28 @@
 # 🛒 Stable Supermarket Inventory Management System
 
-![Python](https://img.shields.io/badge/Python-3.14-blue?logo=python)
-![CustomTkinter](https://img.shields.io/badge/GUI-CustomTkinter-blue)
-![MySQL](https://img.shields.io/badge/Database-MySQL-orange?logo=mysql)
-![XAMPP](https://img.shields.io/badge/Server-XAMPP-FB7A24?logo=xampp)
-![License](https://img.shields.io/badge/License-MIT-green)
+[![Python](https://img.shields.io/badge/Python-3.14-blue?logo=python)](https://img.shields.io/badge/Python-3.14-blue?logo=python)
+[![CustomTkinter](https://img.shields.io/badge/GUI-CustomTkinter-blue)](https://img.shields.io/badge/GUI-CustomTkinter-blue)
+[![MySQL](https://img.shields.io/badge/Database-MySQL-orange?logo=mysql)](https://img.shields.io/badge/Database-MySQL-orange?logo=mysql)
+[![XAMPP](https://img.shields.io/badge/Server-XAMPP-FB7A24?logo=xampp)](https://img.shields.io/badge/Server-XAMPP-FB7A24?logo=xampp)
+[![License](https://img.shields.io/badge/License-MIT-green)](https://img.shields.io/badge/License-MIT-green)
 
-A modern desktop-based **Inventory and Sales Management System** developed using **Python**, **CustomTkinter**, and **MySQL/MariaDB**.
+A modern desktop-based **Inventory and Sales Management System** built with **Python**, **CustomTkinter**, and **MySQL/MariaDB**.
 
-The application helps supermarkets manage inventory, monitor stock levels, process sales, generate receipts, track customers and suppliers, and generate business reports through a modern desktop interface.
+The application helps supermarkets manage inventory, monitor stock levels, process sales, generate receipts, track customers and suppliers, and generate business reports — all through a modern desktop interface.
+
+> **In short:** a single-store point-of-sale and stock-control tool that replaces spreadsheets with a proper login-gated desktop app, real-time stock deduction on sale, and printable reports.
 
 ---
 
-# ✨ Features
+<!--
+  📸 DEMO GIF GOES HERE
+  Record a 10-15 second screen capture of: login → add a sale → watch stock update → generate a receipt.
+  Save it as demo.gif in a /media or /screenshots folder, then uncomment the line below:
+
+  ![Demo](./screenshots/demo.gif)
+-->
+
+## ✨ Features
 
 - Secure Administrator Login
 - Staff User Management
@@ -29,13 +39,13 @@ The application helps supermarkets manage inventory, monitor stock levels, proce
 - Sales History
 - Inventory Reports
 - Low Stock Monitoring
-- Stock Adjustment (Restock/Damaged Items)
+- Stock Adjustment (Restock / Damaged Items)
 - Database Backup
 - Modern CustomTkinter User Interface
 
 ---
 
-# 🛠 Technologies Used
+## 🛠 Technologies Used
 
 - Python 3
 - CustomTkinter
@@ -47,59 +57,34 @@ The application helps supermarkets manage inventory, monitor stock levels, proce
 
 ---
 
-# 🚀 Quick Start
+## 🚀 Quick Start
 
 ### 1. Clone the repository
-
 ```bash
-git clone https://github.com/YOUR_USERNAME/Stable-Supermarket-Inventory-System.git
+git clone https://github.com/Durodola2/Stable-Supermarket-Inventory-System.git
 ```
 
 ### 2. Open the project
-
 ```bash
 cd Stable-Supermarket-Inventory-System
 ```
 
 ### 3. Start MySQL
-
 Start **Apache** and **MySQL** using XAMPP.
 
 ### 4. Import the database
+Import `database/schema.sql` using **phpMyAdmin**.
 
-Import
-
-```
-database/schema.sql
-```
-
-using **phpMyAdmin**.
-
-### 5. Configure Environment Variables
-
-Copy
-
-```
-.env.example
-```
-
-to
-
-```
-.env
-```
-
-and update your database credentials.
+### 5. Configure environment variables
+Copy `.env.example` to `.env` and update your database credentials.
 
 ### 6. Install dependencies
-
-```powershell
+```bash
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 ```
 
 ### 7. Run the application
-
-```powershell
+```bash
 .\.venv\Scripts\python.exe main.py
 ```
 
@@ -107,59 +92,34 @@ The first launch allows you to create the administrator account.
 
 ---
 
-# 🖥 Windows Executable
+## 🖥 Windows Executable
 
-The compiled executable is located inside:
+A packaged build is attached to the [Releases](https://github.com/Durodola2/Stable-Supermarket-Inventory-System/releases) page — download `StableSupermarket.exe` from the latest release instead of building from source if you just want to try the app.
 
-```
-dist/
-```
-
-Simply:
-
+To run it:
 - Keep `.env` beside the executable.
 - Start MySQL using XAMPP.
-- Double-click:
-
-```
-StableSupermarket.exe
-```
+- Double-click `StableSupermarket.exe`.
 
 ---
 
-# 📸 Screenshots
+## 📸 Screenshots
 
-### Login Screen
+| Login | Dashboard |
+|---|---|
+| ![Login](./screenshots/login.png) | ![Dashboard](./screenshots/dashboard.png) |
 
-![Login](screenshots/login.png)
+| Product Management | Sales |
+|---|---|
+| ![Products](./screenshots/products.png) | ![Sales](./screenshots/sales.png) |
 
----
-
-### Dashboard
-
-![Dashboard](screenshots/dashboard.png)
-
----
-
-### Product Management
-
-![Products](screenshots/products.png)
+| Reports |
+|---|
+| ![Reports](./screenshots/report.png) |
 
 ---
 
-### Sales
-
-![Sales](screenshots/sales.png)
-
----
-
-### Reports
-
-![Reports](screenshots/reports.png)
-
----
-
-# 📂 Project Structure
+## 📂 Project Structure
 
 ```
 Stable-Supermarket-Inventory-System
@@ -168,14 +128,9 @@ Stable-Supermarket-Inventory-System
 │   └── schema.sql
 │
 ├── docs/
-│
-├── receipts/
+│   └── PROJECT_DOCUMENTATION.md
 │
 ├── screenshots/
-│
-├── build/
-│
-├── dist/
 │
 ├── main.py
 ├── requirements.txt
@@ -184,17 +139,13 @@ Stable-Supermarket-Inventory-System
 └── .env.example
 ```
 
+> Note: `build/`, `dist/`, and `receipts/` are generated at build/runtime and are intentionally excluded from version control (see `.gitignore`). Grab the packaged executable from [Releases](https://github.com/Durodola2/Stable-Supermarket-Inventory-System/releases) instead of the `dist/` folder.
+
 ---
 
-# 📚 Documentation
+## 📚 Documentation
 
-Complete project documentation is available inside:
-
-```
-docs/PROJECT_DOCUMENTATION.md
-```
-
-The documentation includes:
+Complete project documentation is available inside `docs/PROJECT_DOCUMENTATION.md`, including:
 
 - System Overview
 - Database Design
@@ -207,8 +158,16 @@ The documentation includes:
 
 ---
 
-# 🚀 Future Improvements
+## 🧭 Known Limitations & Future Improvements
 
+This is a single-store, single-database desktop app — a few deliberate scope trade-offs worth noting:
+
+- No automated tests yet — the DB layer would benefit from unit tests around stock deduction logic
+- Single-branch only; no multi-location stock sync
+- No role-based permission granularity beyond admin/staff
+- Barcode input is manual (SKU/name search) rather than hardware-scanner integrated
+
+**Planned next:**
 - Barcode Scanner Integration
 - QR Code Product Lookup
 - Sales Analytics Dashboard
@@ -220,11 +179,11 @@ The documentation includes:
 
 ---
 
-# 🔒 Security
+## 🔒 Security
 
 The project uses:
 
-- Environment Variables (.env)
+- Environment Variables (`.env`)
 - Password Authentication
 - Database Validation
 - Input Validation
@@ -234,20 +193,16 @@ The project uses:
 
 ---
 
-# 👨‍💻 Author
+## 👨‍💻 Author
 
 **David Durodola**
-
 Backend & Data Engineer
 
-GitHub:
-https://github.com/Durodola2
-
-Email:
-durodoladavid3@gmail.com
+GitHub: [https://github.com/Durodola2](https://github.com/Durodola2)
+Email: durodoladavid3@gmail.com
 
 ---
 
-# 📄 License
+## 📄 License
 
-This project is licensed under the MIT License.
+This project is licensed under the [MIT License](./LICENSE).
