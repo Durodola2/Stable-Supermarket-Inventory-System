@@ -13,7 +13,7 @@ The application helps supermarkets manage inventory, monitor stock levels, proce
 > **In short:** a single-store point-of-sale and stock-control tool that replaces spreadsheets with a proper login-gated desktop app, real-time stock deduction on sale, and printable reports.
 
 ---
-![Demo](./screenshots/ims.gif)
+![Demo](./screenshots/IMS.gif)
 
 ## ✨ Features
 
