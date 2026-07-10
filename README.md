@@ -13,14 +13,7 @@ The application helps supermarkets manage inventory, monitor stock levels, proce
 > **In short:** a single-store point-of-sale and stock-control tool that replaces spreadsheets with a proper login-gated desktop app, real-time stock deduction on sale, and printable reports.
 
 ---
-
-<!--
-  📸 DEMO GIF GOES HERE
-  Record a 10-15 second screen capture of: login → add a sale → watch stock update → generate a receipt.
-  Save it as demo.gif in a /media or /screenshots folder, then uncomment the line below:
-
-  ![Demo](./screenshots/demo.gif)
--->
+![Demo](./screenshots/ims.gif)
 
 ## ✨ Features
 
