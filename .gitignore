@@ -1,0 +1,22 @@
+# Environment
+.env
+.venv/
+
+# Session
+.session.json
+
+# Generated folders
+build/
+dist/
+receipts/
+backups/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# PyInstaller
+*.spec
+
+# Logs
+*.log
