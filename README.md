@@ -115,7 +115,7 @@ To run it:
 
 | Reports |
 |---|
-| ![Reports](./screenshots/reports.png) |
+| ![Reports](./screenshots/report.png) |
 
 ---
 
